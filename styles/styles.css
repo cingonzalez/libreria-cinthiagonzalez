@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.bienvenida {
+  background-color: #6c63ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.header-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 6vw;
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  opacity: 0.8;
+  z-index:1000;
+  transition: opacity 0.3s ease;;
+}
+.logo:hover{
+    opacity: 1;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #5146d8;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #3f38b5;
+}
+
+.contenedor {
+  /*max-width: 1000;*/
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+} 
+.imagen-ajustada{
+    width: 45%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 10px; /*espacio entre fotos*/
+    flex-wrap: wrap; /*para que si no entran, bajen una de bajo de otra*/
+    margin-top: 20px;
+}
+.foto, .producto, .imagen-tienda{
+    width: 45%;
+    border: 2px black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.rrss{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+.rrss:hover{
+    transform: scale(1,1);
+
+
+}
+
+
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/*flex*/
+.caja{
+    margin: 10px;
+    background-color: green;
+    height: 15vh;
+    width: 20vw;
+    display: inline-block;
+}
+
+.flex{
+    border: 2px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.whatsapp{
+    width: 100px;
+    height: auto;
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    opacity: 0.6;
+    transition: right 0.3 ease, opacity o.3s ease;
+    z-index: 1000;
+}
+.whatlogo{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 8px;
+
+
+}
+.menu{
+    margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 14px;
+    }
+  .logo {
+    width: 14vw;
+    height: auto;
+  }
+
+  .foto {
+    width: 90%;
+  }
+
+  .rrss {
+    width: 24px;
+    height: 24px;
+  }
+
+  .whatsapp {
+    width: 40px;
+    bottom: 100px;
+  }
+.caja{
+    display: block;
+    width: 980vw;
+    margin: 20vh auto;
+    font-size: 16px;
+}
+  .menu {
+    flex-direction: row;
+    align-items: wrap;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .menu li a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
