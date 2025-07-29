@@ -218,6 +218,56 @@ footer {
   max-height: 250px;
   object-fit: cover;
 }
+.imagen-tienda{
+  width: 250px;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+.carousel-item img {
+  max-height: 500px;
+  object-fit: contain;
+}
+.testimonios {
+  padding: 40px 20px;
+  background-color: #fff6e8;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #a85c2e;
+  font-family: 'Georgia', serif;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta-testimonio {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.comentario {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.autora {
+  font-weight: bold;
+  color: #a85c2e;
+  text-align: right;
+}
 
 @media screen and (max-width: 480px) {
     body{
