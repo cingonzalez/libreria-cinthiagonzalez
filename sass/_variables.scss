@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+$fuente: roboto, sans-serif;
+
+$color-principal: #000; 
+$color-secundario: rgb(192, 167, 121);
+$color-hover: #333;
+$color-borde: black;
+$color-fondo-header: #f5f5f5;
+$padding-enlaces: 10px;
+$color-texto-header:#000;
+
+ body{
+         background-color: #f5f5f5;
+    }
+@mixin mobile{
+   @media(max-width: 430px){
+    @content;
+   
+}
+
+   .caja{
+    margin: 10px;
+    background-color: green;
+    height: 15vh;
+    width: 20vw;
+    display: inline-block;
+}
+
+.flex{
+    border: 2px black;
+    display: flex;
+    flex-direction: row;
+}
+   }
+

@@ -1,0 +1,17 @@
+@use "variables" as v;
+.imagen-tienda{
+  width: 250px;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+.texto-galeria{
+  font-size: 1.1rem;
+  margin: 15px auto;
+  max-width: 800px;
+  text-align: center;
+  color: #444;
+  line-height: cover;
+}
+
+

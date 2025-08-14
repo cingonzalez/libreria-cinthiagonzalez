@@ -1,0 +1,134 @@
+@use "variables" as v;
+   .bienvenida {
+  background-color: #6c63ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+ .titulo {
+  font-size: 2rem;
+}
+.testimonios {
+  padding: 40px 20px;
+  background-color: #fff6e8;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #a85c2e;
+  font-family: 'Georgia', serif;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta-testimonio {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.comentario {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.autora {
+  font-weight: bold;
+  color: #a85c2e;
+  text-align: right;
+}
+
+.header-contenido {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+  gap: 10px;
+  }
+  .menu li a{
+     text-decoration: none;
+  padding: 10px 20px;
+  background-color: #5146d8;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  .menu li a:hover{
+     background-color: #3f38b5;
+  }
+  .whatsapp{
+    width: 100px;
+    height: auto;
+   position: fixed;
+    right: 20px;
+    bottom: 150px;
+    opacity: 0.6;
+  
+  }
+ 
+ 
+  .rrss{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  .logo{
+     width: 6vw;
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  opacity: 0.8;
+  z-index:1000;
+  transition: opacity 0.3s ease;;
+  }
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    }
+  
+
+  @include v.mobile{
+  body{
+        font-size: 14px;
+    }
+  .logo {
+    width: 14vw;
+    height: auto;
+  }
+  .menu {
+    flex-direction: row;
+    align-items: wrap;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .menu li a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  }
+  
+

@@ -1,0 +1,28 @@
+@use "variables" as v;
+.contenedor{
+    padding: 20px;
+}
+.carousel-caption-custom{
+     position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* fondo negro suave */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.carousel-item img {
+  object-fit: contain;
+  height: auto;
+}
+.carousel-item img {
+  max-height: 500px;
+  object-fit: contain;
+}
+@include v.mobile{
+    .foto {
+    width: 90%;
+  }
+}

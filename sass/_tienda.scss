@@ -1,0 +1,14 @@
+
+@use "variables" as v;
+.foto, .producto, .imagen-tienda{
+    width: 45%;
+    border: 2px black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.imagen-tienda{
+  width: 250px;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
