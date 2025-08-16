@@ -75,22 +75,7 @@
   .menu li a:hover{
      background-color: #3f38b5;
   }
-  .whatsapp{
-    width: 100px;
-    height: auto;
-   position: fixed;
-    right: 20px;
-    bottom: 150px;
-    opacity: 0.6;
-  
-  }
- 
- 
-  .rrss{
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-  }
+
 
   .logo{
      width: 6vw;
@@ -99,7 +84,7 @@
   top: 10px;
   left: 10px;
   opacity: 0.8;
-  z-index:1000;
+  z-index:1000;//se usa para pisar bootstrap//
   transition: opacity 0.3s ease;;
   }
 

@@ -4,32 +4,43 @@ footer {
   background-color: #ddd;
   padding: 20px;
   margin-top: 40px;
-}
- .rrss{
+   .rrss{
     width: 30px;
     height: 30px;
     margin: 0 5px;
     transition: transform 0.3s ease;
 }
-.rrss:hover{
-    transform: scale(1,1);
-}
+
 .redes-sociales{
     display: flex;
     justify-content: center;
     gap: 2px;
 
 }
+
   .whatsapp{
     width: 100px;
     height: auto;
-    z-index: 2;
-  }
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    opacity: 0.6;
+    transition: right 0.3 ease, opacity o.3s ease;
+    z-index: 1000;
+     &hover{
+      @extend %mover;
+    }
+    //SE USA PARA PISAR ESTILOS DE BOOTSTRAP//
+  
   .whatlogo{
     width: 50px;
     height: 50px;
-    display: block;
+    display: block; 
+ 
+     }
     }
+    }
+
      @include v.mobile{
          .rrss {
     width: 24px;
