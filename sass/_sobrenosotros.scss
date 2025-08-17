@@ -3,11 +3,7 @@
 .titulo {
   font-size: 2rem;
 }
-body {
-  font-family: sans-serif;
-  background-color: #f5f5f5;
-  line-height: 1.6;
-}
+
 
 .foto, .producto, .imagen-tienda{
    width: 45%;
@@ -17,7 +13,7 @@ body {
 }
 
 .contenedor {
-  /*max-width: 1000;*/
+
   margin: auto;
   padding: 20px;
   background-color: white;
@@ -30,7 +26,11 @@ body {
   text-align: right;
 }
 @include v.mobile{
-      .foto {
-    width: 90%;
+  .foto-nosotros{
+     width: 45%;
+  border: 2px black;
+  border-radius: 10px;
+  object-fit: cover;
   }
+      }
 

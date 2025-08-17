@@ -2,23 +2,25 @@
 footer {
   text-align: center;
   background-color: #ddd;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 40px;
+  margin-top: 60px;
+
+  }
    .rrss{
     width: 30px;
     height: 30px;
     margin: 0 5px;
     transition: transform 0.3s ease;
-}
+   }
 
-.redes-sociales{
+   .redes-sociales{
     display: flex;
     justify-content: center;
     gap: 2px;
 
-}
+   }
 
-  .whatsapp{
+    .whatsapp{
     width: 100px;
     height: auto;
     position: fixed;
@@ -27,33 +29,32 @@ footer {
     opacity: 0.6;
     transition: right 0.3 ease, opacity o.3s ease;
     z-index: 1000;
-     &hover{
-      @extend %mover;
-    }
-    //SE USA PARA PISAR ESTILOS DE BOOTSTRAP//
+     //SE USA PARA PISAR ESTILOS DE BOOTSTRAP//
   
-  .whatlogo{
+    }
+   
+    .whatlogo{
     width: 50px;
     height: 50px;
     display: block; 
  
      }
-    }
-    }
+     
+    
 
      @include v.mobile{
          .rrss {
     width: 24px;
     height: 24px;
-  }
+   }
 
-  .whatsapp {
+   .whatsapp {
     width: 40px;
     bottom: 100px;
-  }
-  .logo {
+   }
+   .logo {
     width: 14vw;
     height: auto;
-  }
+   }
  
      }
