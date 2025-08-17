@@ -25,12 +25,25 @@
   color: #a85c2e;
   text-align: right;
 }
+.text-center{
+   font-size: 1.3rem;
+  padding: 10px;
+ max-width: 800px;
+ margin: 0 auto;
+ line-height: 1.2;
+ text-align: center;
+}
+.texto-nosotros{
+  font-size: 1.3rem;
+  padding: 10px;
+ max-width: 800px;
+ margin: 0 auto;
+ line-height: 1.2;
+ 
+}
+
+
 @include v.mobile{
-  .foto-nosotros{
-     width: 45%;
-  border: 2px black;
-  border-radius: 10px;
-  object-fit: cover;
-  }
+ 
       }
 
